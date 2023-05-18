@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSV Details: <%= filename %></title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSV Details: <%= filename %></h1>
+    <table>
+      <thead>
+        <tr>
+          <% fileContent.split('\n')[0].split(',').forEach(function(column) { %>
+          <th><%= column %></th>
+          <% }); %>
+        </tr>
+      </thead>
+      <tbody>
+        <% fileContent.split('\n').slice(1).forEach(function(row) { %> <% if
+        (row.trim().length > 0) { %>
+        <tr>
+          <% row.split(',').forEach(function(cell) { %>
+          <td><%= cell %></td>
+          <% }); %>
+        </tr>
+        <% } %> <% }); %>
+      </tbody>
+    </table>
+  </body>
+</html>

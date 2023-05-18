@@ -1,0 +1,15 @@
+StudentId,Batch,Name,Email,Status,College,DSA,WEBD,REACT,CompanyName,InterviewDate,Result
+6311de56336383abe09cf8b9,augiust,ankit,ankitbhatt640@gmail.com,placed,uped,100000,100000,1e+26,posait,Aug 31 2022,PASS
+6311de56336383abe09cf8b9,augiust,ankit,ankitbhatt640@gmail.com,placed,uped,100000,100000,1e+26,gggg,Dec 31 2022,On Hold
+6311de56336383abe09cf8b9,augiust,ankit,ankitbhatt640@gmail.com,placed,uped,100000,100000,1e+26,Infosys,Feb 23 2023,On Hold
+6311de56336383abe09cf8b9,augiust,ankit,ankitbhatt640@gmail.com,placed,uped,100000,100000,1e+26,Pregrad,Feb 23 2023,On Hold
+6311de56336383abe09cf8b9,augiust,ankit,ankitbhatt640@gmail.com,placed,uped,100000,100000,1e+26,hdfg,Mar 29 2023,On Hold
+6311de56336383abe09cf8b9,augiust,ankit,ankitbhatt640@gmail.com,placed,uped,100000,100000,1e+26,manoj,Apr 01 2023,On Hold
+6311de56336383abe09cf8b9,augiust,ankit,ankitbhatt640@gmail.com,placed,uped,100000,100000,1e+26,abc,Apr 18 2023,On Hold
+637c65baf2238ebec8e94796,test,t1,t1@gmail.com,placed,a,10,10,10,test,Nov 22 2022,PASS
+637c65baf2238ebec8e94796,test,t1,t1@gmail.com,placed,a,10,10,10,tcs,Jan 14 2023,On Hold
+637c65baf2238ebec8e94796,test,t1,t1@gmail.com,placed,a,10,10,10,Amazon,Mar 29 2023,On Hold
+637c65baf2238ebec8e94796,test,t1,t1@gmail.com,placed,a,10,10,10,manoj,Apr 01 2023,On Hold
+637c65baf2238ebec8e94796,test,t1,t1@gmail.com,placed,a,10,10,10,infosys,Apr 04 2023,On Hold
+637c65baf2238ebec8e94796,test,t1,t1@gmail.com,placed,a,10,10,10,Infosys,Feb 23 2023,On Hold
+637c65baf2238ebec8e94796,test,t1,t1@gmail.com,placed,a,10,10,10,abc,Apr 18 2023,On Hold
