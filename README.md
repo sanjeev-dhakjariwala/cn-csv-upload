@@ -50,9 +50,5 @@ Clone the repository:
 
 Contributions are welcome! If you find any issues or want to enhance the project, please open an issue or submit a pull request.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ## Live URL
 https://cn-csv-upload-production.up.railway.app/
