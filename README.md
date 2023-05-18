@@ -30,4 +30,19 @@ Clone the repository:
  6. Click on the name of the CSV file to view the details of the CSV file.
  7. In the CSV details page, you can use the search feature to search for specific keywords in the table.
  
+ ## Project Structure
+    `app.js`: Main application file that sets up the server and routes.
+    `controllers/homeController.js`: Contains the route handler for the home page.
+    `controllers/csvController.js`: Contains the route handler for uploading and displaying CSV files.
+    `views/`: Contains the EJS templates for rendering HTML pages.
+    `public/`: Contains static files like CSS stylesheets and client-side JavaScript files.
+    `uploads/`: Folder where the uploaded CSV files are stored.
+    
+## Dependencies
+    Express: Web framework for Node.js.
+    EJS: Embedded JavaScript templates for rendering HTML pages.
+    Multer: Middleware for handling file uploads.
+    Body-parser: Middleware for parsing request bodies.
+    Express-async-handler: Middleware for handling asynchronous route handlers.
+    fs: File system module for reading and writing files.
  
