@@ -5,8 +5,29 @@ This is a Node.js project with EJS template engine for uploading and displaying 
 
 ## Installation
 
-1. Clone the repository:
+Clone the repository:
 
    ```
-   git clone [<repository-url>](https://github.com/sanjeev-dhakjariwala/cn-csv-upload.git)
+   git clone https://github.com/sanjeev-dhakjariwala/cn-csv-upload.git
    ```
+ Navigate to the project directory:
+ ```
+ cd nodejs-ejs-csv-project
+ ```
+ Install the dependencies:
+ ```
+ Install the dependencies:
+ ```
+ ## Usage
+ 1. Start the server
+ ```
+ npm start
+ ```
+ 2. Open your web browser and go to http://localhost:4000.
+ 3. You should see the "Upload CSV File" page.
+ 4. Choose a CSV file using the file input field and click the "Upload" button.
+ 5. The uploaded CSV file will be displayed on the page.
+ 6. Click on the name of the CSV file to view the details of the CSV file.
+ 7. In the CSV details page, you can use the search feature to search for specific keywords in the table.
+ 
+ 
