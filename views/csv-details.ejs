@@ -28,15 +28,15 @@
         var input = document.getElementById('searchInput').value.toLowerCase();
         var rows = document.getElementsByTagName('tr');
 
-        for (var i = 0; i < rows.length; i++) {
-          var cells = rows[i].getElementsByTagName('td');
-          var rowText = '';
+        for (let i = 0; i < rows.length; i++) {
+          let cells = rows[i].getElementsByTagName('td');
+          let rowText = '';
 
-          for (var j = 0; j < cells.length; j++) {
+          for (let j = 0; j < cells.length; j++) {
             rowText += cells[j].textContent.toLowerCase();
           }
 
-          if (rowText.includes(input)) {
+          if (rowText.includes(input) && input) {
             rows[i].classList.add('highlight');
           } else {
             rows[i].classList.remove('highlight');
@@ -49,7 +49,7 @@
     <h1>CSV Details: <%= filename %></h1>
     <div>
       <label for="searchInput">Search:</label>
-      <input type="text" id="searchInput" onkeyup="searchTable()" />
+      <input type="text" id="searchInput" onkeyup="searchTable()" style="margin-bottom: 10px;"/>
     </div>
     <table>
       <thead>
