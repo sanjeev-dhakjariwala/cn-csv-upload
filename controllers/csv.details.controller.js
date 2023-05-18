@@ -9,7 +9,6 @@ const csvDetails = asyncHandler(async (req, res) => {
     // Read the CSV file content
     const fileContent = await fs.promises.readFile(filePath, 'utf-8');
     // Pass the file content to the details page for rendering
-    console.log(fileContent);
     res.render('csv-details.ejs', { filename, fileContent });
   } catch (err) {
     console.error('Error reading CSV file:', err);

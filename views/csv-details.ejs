@@ -18,10 +18,39 @@
       th {
         background-color: #f2f2f2;
       }
+
+      .highlight {
+        background-color: yellow;
+      }
     </style>
+    <script>
+      function searchTable() {
+        var input = document.getElementById('searchInput').value.toLowerCase();
+        var rows = document.getElementsByTagName('tr');
+
+        for (var i = 0; i < rows.length; i++) {
+          var cells = rows[i].getElementsByTagName('td');
+          var rowText = '';
+
+          for (var j = 0; j < cells.length; j++) {
+            rowText += cells[j].textContent.toLowerCase();
+          }
+
+          if (rowText.includes(input)) {
+            rows[i].classList.add('highlight');
+          } else {
+            rows[i].classList.remove('highlight');
+          }
+        }
+      }
+    </script>
   </head>
   <body>
     <h1>CSV Details: <%= filename %></h1>
+    <div>
+      <label for="searchInput">Search:</label>
+      <input type="text" id="searchInput" onkeyup="searchTable()" />
+    </div>
     <table>
       <thead>
         <tr>
@@ -41,5 +70,11 @@
         <% } %> <% }); %>
       </tbody>
     </table>
+    <div id="searchResult">
+      <% if (fileContent.includes('\n') && fileContent.split('\n').length <= 2)
+      { %>
+      <p>No result Found</p>
+      <% } %>
+    </div>
   </body>
 </html>
